@@ -1,0 +1,20 @@
+(executable
+ (public_name pokedex)
+ (name main)
+ (libraries dream cohttp-lwt-unix cohttp))
+
+(rule
+ (deps ../asset/main.css)
+ (action
+  (with-stdout-to
+   asset.ml
+   (progn
+    (echo "let main_css = {|")
+    (cat ../asset/main.css)
+    (echo "|}")))))
+
+(rule
+ (targets template_index.ml)
+ (deps template_index.eml)
+ (action
+  (run dream_eml %{deps} --workspace %{workspace_root})))

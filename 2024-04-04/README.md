@@ -65,6 +65,43 @@ With the setup complete, you're ready to start developing the Pokedex applicatio
 - **Using the Pokeapi**: Refer to the [Pokeapi documentation](https://pokeapi.co/docs/v2) to understand how to fetch and use Pokémon data in your application.
 - **Dream and Hyper Documentation**: You can find the documentation for [Dream](https://ocaml.org/p/dream) and [Hyper](https://ocaml.org/p/hyper) on OCaml.org package documentation.
 
+## Roadmap
+
+Below, you'll find a list of milestones for the project, that we'll use during the Meetup.
+
+### Milestone 1: Basic Setup and Displaying Pokémon Names
+- **Objective**: Set up the project environment and create a simple web page to display a list of Pokémon names.
+- **Scope**:
+  - Install and set up OCaml, Dream, and Hyper.
+  - Create a minimal Dream server to serve web pages.
+  - Use Hyper to fetch a list of Pokémon names from the pokeapi and display them as a simple list on a static web page.
+
+### Milestone 2: Styling the List with CSS
+- **Objective**: Enhance the visual presentation of the Pokémon list using CSS.
+- **Scope**:
+  - Introduce basic CSS to style the list of Pokémon names, focusing on typography, spacing, and color scheme.
+  - Serve the CSS files through the Dream server and ensure they're applied correctly to the list page.
+
+### Milestone 3: Displaying Pokémon Cards
+- **Objective**: Transition from a simple list to displaying Pokémon in a card format, showing more details.
+- **Scope**:
+  - Fetch detailed information for each Pokémon (e.g., image, type, and basic stats) using Hyper from the pokeapi.
+  - Design and implement a Pokémon card layout using HTML and CSS. Each card should display the Pokémon's name, image, and key information.
+  - Arrange the Pokémon cards in a grid layout on the web page.
+
+### Milestone 4: Adding Interactive Elements
+- **Objective**: Enhance the user interface with interactive elements such as a search bar and filters.
+- **Scope**:
+  - Implement a search bar that allows users to filter Pokémon by name.
+  - Add filters to sort or filter Pokémon by types, stats, or other characteristics.
+  - Use JavaScript or OCaml to dynamically update the list of displayed Pokémon cards based on user interactions.
+
+### Milestone 5: Creating Detailed Pokémon Pages
+- **Objective**: Provide detailed information for each Pokémon through individual Pokémon pages.
+- **Scope**:
+  - Design a detailed page layout to display extensive information about each Pokémon, including their evolution chain, abilities, and moves.
+  - Implement routing in Dream to handle navigation to each Pokémon's detailed page when a card is clicked.
+
 ## Stay Connected
 
 - **Discord**: Our [meetup Discord server](https://discord.gg/juTxX2XA) is the hub for communication and collaboration.

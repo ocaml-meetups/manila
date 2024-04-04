@@ -65,6 +65,29 @@ With the setup complete, you're ready to start developing the Pokedex applicatio
 - **Using the Pokeapi**: Refer to the [Pokeapi documentation](https://pokeapi.co/docs/v2) to understand how to fetch and use Pokémon data in your application.
 - **Dream and Hyper Documentation**: You can find the documentation for [Dream](https://ocaml.org/p/dream) and [Hyper](https://ocaml.org/p/hyper) on OCaml.org package documentation.
 
+### Misc. Tools
+
+Since you'll also be creating a minimal frontend for the project, you may want to make use of the following tools:
+
+#### CSS
+
+* [tailwind.css](https://tailwindcss.com/) - utility-first CSS framework with good defaults.
+* [daisyUI](https://daisyui.com/) - component library for Tailwind CSS.
+* Just CSS, if you're comfortable working with it, or whatever other CSS library you prefer.
+
+#### Interactivity
+
+* [HTMX](https://htmx.org) - interactivity w/ the server directly in the markup.
+* [Alpine.js](https://alpinejs.dev/) - lightweight framework for adding behaviour in the markup.
+* Just JavaScript and XHR/Fetch if you're comfortable working with it; or your choice of frontend framework.
+* You can use Melange/Js_of_ocaml, although in the interest of time it may be good to check it out some other day.
+
+#### Editors
+
+We recommend using [Visual Studio Code](https://code.visualstudio.com) for this project, as well as the [OCaml Platform](https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform) extension.
+
+If you're using Vim or Emacs, you may try to follow the instructions in [this page](https://ocaml.org/docs/set-up-editor).
+
 ## Roadmap
 
 Below, you'll find a list of milestones for the project, that we'll use during the Meetup.

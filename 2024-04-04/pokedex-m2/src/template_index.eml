@@ -1,0 +1,16 @@
+let render names =
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <h1>Pokémon Names</h1>
+    <ul class="pokemon-list">
+        <% List.iter (fun name -> %>
+        <li><%s name %></li>
+        <% ) names; %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+let render pokemons =
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="pokemon-container">
+        <% List.iter (fun (p : Pokemon.t) -> %>
+        <div class="pokemon-card">
+            <img src="<%s p.image_url %>" alt="<%s p.name %>" />
+            <h2><%s p.name %></h2>
+            <p>Types: <%s String.concat ", " (List.map (fun (t : Pokemon.type_) -> t.type_name) p.types) %></p>
+            <% List.iter (fun (s : Pokemon.stat) -> %>
+            <p><%s s.stat_name %>: <%s string_of_int s.base_stat %></p>
+            <% ) p.stats; %>
+        </div>
+        <% ) pokemons; %>
+    </div>
+</body>
+</html>

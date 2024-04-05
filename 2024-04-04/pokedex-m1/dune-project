@@ -1,0 +1,11 @@
+(lang dune 3.12)
+
+(name pokedex)
+
+(generate_opam_files true)
+
+(package
+ (name pokedex)
+ (synopsis "A Pokedex in OCaml")
+ (description "A Pokedex in OCaml")
+ (depends dream cohttp-lwt-unix yojson))
